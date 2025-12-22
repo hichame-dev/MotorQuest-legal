@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m \"$(cat <<''EOF''\nImprove privacy policy with GDPR compliance enhancements\n\n- Add legal basis for processing section (Art. 6 GDPR)\n- Add detailed data retention periods table\n- Add account deletion procedure (in-app + email)\n- Add Google Play Data Safety summary section\n- Update section numbering (now 15 sections)\n- Update effective date to December 14, 2025\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push)"
+    ]
+  }
+}
