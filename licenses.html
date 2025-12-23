@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorQuest - Licences Open Source</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0A0E14 0%, #1a1f2e 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #70C3FF;
+            font-size: 1.1em;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            color: #94A9C9;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid #94A9C9;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+        .nav a:hover {
+            background: #70C3FF;
+            color: #0A0E14;
+            border-color: #70C3FF;
+        }
+        .nav a.active {
+            background: #70C3FF;
+            color: #0A0E14;
+            border-color: #70C3FF;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            color: #0A0E14;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #70C3FF;
+        }
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #70C3FF;
+            margin: 15px 0;
+        }
+        .license-box {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85em;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        a {
+            color: #47B2FF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #94A9C9;
+            font-size: 0.9em;
+        }
+        .date {
+            color: #666;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        strong {
+            color: #0A0E14;
+        }
+        .lib-item {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .lib-item h3 {
+            margin-top: 0;
+            color: #0A0E14;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="asset/app-icon-512.png" alt="MotorQuest Logo" class="logo">
+            <h1>MotorQuest</h1>
+            <p class="subtitle">Licences Open Source</p>
+            <nav class="nav">
+                <a href="index.html">Confidentialité</a>
+                <a href="terms.html">Conditions</a>
+                <a href="licenses.html" class="active">Licences</a>
+                <a href="support.html">Aide</a>
+            </nav>
+        </div>
+
+        <div class="card">
+            <p class="date">Dernière mise à jour : 23 décembre 2025</p>
+            <p>MotorQuest utilise les bibliothèques open source suivantes. Nous remercions les développeurs et communautés qui les maintiennent.</p>
+
+            <h2>Frameworks principaux</h2>
+
+            <div class="lib-item">
+                <h3>React Native</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Copyright :</strong> Meta Platforms, Inc.</li>
+                    <li><strong>Site :</strong> <a href="https://reactnative.dev" target="_blank">reactnative.dev</a></li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>React</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Copyright :</strong> Meta Platforms, Inc.</li>
+                    <li><strong>Site :</strong> <a href="https://react.dev" target="_blank">react.dev</a></li>
+                </ul>
+            </div>
+
+            <h2>Navigation</h2>
+
+            <div class="lib-item">
+                <h3>React Navigation</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Packages :</strong> @react-navigation/native, @react-navigation/bottom-tabs, @react-navigation/native-stack</li>
+                    <li><strong>Site :</strong> <a href="https://reactnavigation.org" target="_blank">reactnavigation.org</a></li>
+                </ul>
+            </div>
+
+            <h2>Cartographie</h2>
+
+            <div class="lib-item">
+                <h3>Mapbox Maps SDK</h3>
+                <ul>
+                    <li><strong>Licence :</strong> Mapbox Terms of Service</li>
+                    <li><strong>Package :</strong> @rnmapbox/maps</li>
+                    <li><strong>Site :</strong> <a href="https://www.mapbox.com" target="_blank">mapbox.com</a></li>
+                    <li><strong>Note :</strong> L'utilisation de Mapbox est soumise aux conditions de Mapbox Inc.</li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>React Native Geolocation Service</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Package :</strong> react-native-geolocation-service</li>
+                </ul>
+            </div>
+
+            <h2>Backend & Stockage</h2>
+
+            <div class="lib-item">
+                <h3>Firebase</h3>
+                <ul>
+                    <li><strong>Licence :</strong> Apache 2.0</li>
+                    <li><strong>Packages :</strong> @react-native-firebase/app, auth, storage, messaging</li>
+                    <li><strong>Copyright :</strong> Google LLC</li>
+                    <li><strong>Site :</strong> <a href="https://firebase.google.com" target="_blank">firebase.google.com</a></li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>MongoDB (Backend)</h3>
+                <ul>
+                    <li><strong>Licence :</strong> Server Side Public License (SSPL)</li>
+                    <li><strong>Site :</strong> <a href="https://www.mongodb.com" target="_blank">mongodb.com</a></li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>Mongoose</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Site :</strong> <a href="https://mongoosejs.com" target="_blank">mongoosejs.com</a></li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>AWS SDK (S3)</h3>
+                <ul>
+                    <li><strong>Licence :</strong> Apache 2.0</li>
+                    <li><strong>Package :</strong> @aws-sdk/client-s3</li>
+                </ul>
+            </div>
+
+            <h2>Interface utilisateur</h2>
+
+            <div class="lib-item">
+                <h3>React Native Reanimated</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Package :</strong> react-native-reanimated</li>
+                    <li><strong>Site :</strong> <a href="https://docs.swmansion.com/react-native-reanimated" target="_blank">docs.swmansion.com/react-native-reanimated</a></li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>React Native Gesture Handler</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Package :</strong> react-native-gesture-handler</li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>React Native Linear Gradient</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Package :</strong> react-native-linear-gradient</li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>React Native Vector Icons</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Package :</strong> react-native-vector-icons</li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>React Native Blur</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Package :</strong> @react-native-community/blur</li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>Shopify React Native Skia</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Package :</strong> @shopify/react-native-skia</li>
+                </ul>
+            </div>
+
+            <h2>Stockage local</h2>
+
+            <div class="lib-item">
+                <h3>Async Storage</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Package :</strong> @react-native-async-storage/async-storage</li>
+                </ul>
+            </div>
+
+            <h2>Utilitaires</h2>
+
+            <div class="lib-item">
+                <h3>Lodash</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Site :</strong> <a href="https://lodash.com" target="_blank">lodash.com</a></li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>date-fns</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Site :</strong> <a href="https://date-fns.org" target="_blank">date-fns.org</a></li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>Zod</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Site :</strong> <a href="https://zod.dev" target="_blank">zod.dev</a></li>
+                </ul>
+            </div>
+
+            <h2>Backend (Node.js)</h2>
+
+            <div class="lib-item">
+                <h3>Express</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                    <li><strong>Site :</strong> <a href="https://expressjs.com" target="_blank">expressjs.com</a></li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>Sharp</h3>
+                <ul>
+                    <li><strong>Licence :</strong> Apache 2.0</li>
+                    <li><strong>Site :</strong> <a href="https://sharp.pixelplumbing.com" target="_blank">sharp.pixelplumbing.com</a></li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>JSON Web Token (jsonwebtoken)</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>bcryptjs</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>Helmet</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                </ul>
+            </div>
+
+            <div class="lib-item">
+                <h3>CORS</h3>
+                <ul>
+                    <li><strong>Licence :</strong> MIT</li>
+                </ul>
+            </div>
+
+            <h2>Texte de la licence MIT</h2>
+            <div class="license-box">MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</div>
+
+            <h2>Texte de la licence Apache 2.0</h2>
+            <p>La licence Apache 2.0 complète est disponible sur : <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">apache.org/licenses/LICENSE-2.0</a></p>
+
+            <h2>Contact</h2>
+            <p>Pour toute question concernant les licences :</p>
+            <ul>
+                <li><strong>Email :</strong> <a href="mailto:skyroadlabs@gmail.com">skyroadlabs@gmail.com</a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 MotorQuest - SkyRoad Labs. Tous droits réservés.</p>
+        </div>
+    </div>
+</body>
+</html>

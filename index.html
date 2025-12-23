@@ -42,6 +42,32 @@
             color: #70C3FF;
             font-size: 1.1em;
         }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            color: #94A9C9;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid #94A9C9;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+        .nav a:hover {
+            background: #70C3FF;
+            color: #0A0E14;
+            border-color: #70C3FF;
+        }
+        .nav a.active {
+            background: #70C3FF;
+            color: #0A0E14;
+            border-color: #70C3FF;
+        }
         .card {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 16px;
@@ -126,6 +152,12 @@
             <img src="asset/app-icon-512.png" alt="MotorQuest Logo" class="logo">
             <h1>MotorQuest</h1>
             <p class="subtitle">Privacy Policy</p>
+            <nav class="nav">
+                <a href="index.html" class="active">Confidentialité</a>
+                <a href="terms.html">Conditions</a>
+                <a href="licenses.html">Licences</a>
+                <a href="support.html">Aide</a>
+            </nav>
         </div>
 
         <div class="card">

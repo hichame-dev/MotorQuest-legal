@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorQuest - Centre d'aide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0A0E14 0%, #1a1f2e 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #70C3FF;
+            font-size: 1.1em;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            color: #94A9C9;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid #94A9C9;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+        .nav a:hover {
+            background: #70C3FF;
+            color: #0A0E14;
+            border-color: #70C3FF;
+        }
+        .nav a.active {
+            background: #70C3FF;
+            color: #0A0E14;
+            border-color: #70C3FF;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            color: #0A0E14;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #70C3FF;
+        }
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        h4 {
+            color: #47B2FF;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #70C3FF;
+            margin: 15px 0;
+        }
+        .important {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+        a {
+            color: #47B2FF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #94A9C9;
+            font-size: 0.9em;
+        }
+        .intro {
+            color: #666;
+            font-size: 1em;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        strong {
+            color: #0A0E14;
+        }
+        .faq-section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .faq-section h3 {
+            margin-top: 0;
+            color: #0A0E14;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #e8f4fd 0%, #f0f8ff 100%);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact-box h3 {
+            margin-top: 0;
+            color: #0A0E14;
+        }
+        .email-btn {
+            display: inline-block;
+            background: #47B2FF;
+            color: white !important;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+        .email-btn:hover {
+            background: #2a9ae8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="asset/app-icon-512.png" alt="MotorQuest Logo" class="logo">
+            <h1>MotorQuest</h1>
+            <p class="subtitle">Centre d'aide</p>
+            <nav class="nav">
+                <a href="index.html">Confidentialité</a>
+                <a href="terms.html">Conditions</a>
+                <a href="licenses.html">Licences</a>
+                <a href="support.html" class="active">Aide</a>
+            </nav>
+        </div>
+
+        <div class="card">
+            <p class="intro">Bienvenue dans le centre d'aide MotorQuest !</p>
+
+            <h2>Questions fréquentes (FAQ)</h2>
+
+            <div class="faq-section">
+                <h3>Compte et connexion</h3>
+
+                <h4>Comment créer un compte ?</h4>
+                <ol>
+                    <li>Téléchargez MotorQuest sur l'App Store ou Google Play</li>
+                    <li>Ouvrez l'application et appuyez sur "Créer un compte"</li>
+                    <li>Entrez votre email et créez un mot de passe</li>
+                    <li>Confirmez votre email via le lien envoyé</li>
+                </ol>
+
+                <h4>J'ai oublié mon mot de passe</h4>
+                <ol>
+                    <li>Sur l'écran de connexion, appuyez sur "Mot de passe oublié"</li>
+                    <li>Entrez votre adresse email</li>
+                    <li>Vérifiez votre boîte mail et suivez les instructions</li>
+                </ol>
+
+                <h4>Comment modifier mon pseudo ?</h4>
+                <p>Allez dans <strong>Paramètres > Compte > Changer de pseudo</strong></p>
+
+                <h4>Comment supprimer mon compte ?</h4>
+                <p>Allez dans <strong>Paramètres > Données > Effacer toutes les données</strong><br>
+                Ou contactez-nous à <a href="mailto:skyroadlabs@gmail.com">skyroadlabs@gmail.com</a></p>
+            </div>
+
+            <div class="faq-section">
+                <h3>Parcours et navigation</h3>
+
+                <h4>Comment démarrer un parcours ?</h4>
+                <ol>
+                    <li>Sélectionnez un parcours depuis l'écran d'accueil ou la recherche</li>
+                    <li>Appuyez sur "Démarrer le parcours"</li>
+                    <li>Suivez les instructions de navigation</li>
+                </ol>
+
+                <h4>Les parcours fonctionnent-ils hors ligne ?</h4>
+                <p>Oui ! Téléchargez les cartes au préalable :</p>
+                <ol>
+                    <li>Ouvrez un parcours</li>
+                    <li>Appuyez sur l'icône de téléchargement</li>
+                    <li>La carte sera disponible hors ligne</li>
+                </ol>
+
+                <h4>Comment voir mes parcours favoris ?</h4>
+                <p>Appuyez sur l'icône cœur pour ajouter un parcours aux favoris.<br>
+                Retrouvez-les dans votre profil ou sur l'écran d'accueil.</p>
+            </div>
+
+            <div class="faq-section">
+                <h3>Tracking GPS</h3>
+
+                <h4>Le GPS ne fonctionne pas correctement</h4>
+                <ol>
+                    <li>Vérifiez que la localisation est activée dans les paramètres</li>
+                    <li>Accordez la permission "Toujours" pour un meilleur suivi</li>
+                    <li>Allez à l'extérieur pour une meilleure réception</li>
+                    <li>Redémarrez l'application si le problème persiste</li>
+                </ol>
+
+                <h4>Comment voir mes statistiques de ride ?</h4>
+                <p>Après chaque ride, un résumé s'affiche avec :</p>
+                <ul>
+                    <li>Distance parcourue</li>
+                    <li>Durée</li>
+                    <li>Vitesse moyenne et max</li>
+                    <li>XP gagnés</li>
+                </ul>
+                <p>Retrouvez votre historique dans <strong>Profil > Historique des rides</strong></p>
+
+                <h4>Mes données GPS sont-elles sécurisées ?</h4>
+                <p>Oui. Vos données sont chiffrées et stockées de manière sécurisée.<br>
+                Consultez notre <a href="index.html">Politique de confidentialité</a> pour plus de détails.</p>
+            </div>
+
+            <div class="faq-section">
+                <h3>Trophées et progression</h3>
+
+                <h4>Comment débloquer des trophées ?</h4>
+                <p>Les trophées se débloquent automatiquement quand vous :</p>
+                <ul>
+                    <li>Complétez des parcours</li>
+                    <li>Atteignez des objectifs de distance</li>
+                    <li>Explorez de nouvelles régions</li>
+                    <li>Participez à des défis</li>
+                </ul>
+
+                <h4>Comment voir tous mes trophées ?</h4>
+                <p>Allez dans <strong>Profil > Trophées</strong> pour voir tous vos badges débloqués et ceux à débloquer.</p>
+
+                <h4>Comment gagner plus d'XP ?</h4>
+                <ul>
+                    <li>Complétez des parcours (+XP selon la difficulté)</li>
+                    <li>Débloquez des trophées (+XP bonus)</li>
+                    <li>Complétez les objectifs hebdomadaires</li>
+                    <li>Participez aux défis communautaires</li>
+                </ul>
+            </div>
+
+            <div class="faq-section">
+                <h3>Paramètres</h3>
+
+                <h4>Comment changer le thème (clair/sombre) ?</h4>
+                <p>Allez dans <strong>Paramètres > Affichage > Thème</strong><br>
+                Choisissez : Système, Clair ou Sombre</p>
+
+                <h4>Comment activer les grandes polices ?</h4>
+                <p>Allez dans <strong>Paramètres > Affichage > Taille du texte > Grand</strong></p>
+
+                <h4>Comment désactiver les vibrations ?</h4>
+                <p>Allez dans <strong>Paramètres > Application > Retours haptiques</strong></p>
+            </div>
+
+            <div class="faq-section">
+                <h3>Problèmes techniques</h3>
+
+                <h4>L'application plante / ne répond plus</h4>
+                <ol>
+                    <li>Fermez complètement l'application</li>
+                    <li>Redémarrez votre téléphone</li>
+                    <li>Vérifiez les mises à jour de l'application</li>
+                    <li>Si le problème persiste, réinstallez l'application</li>
+                </ol>
+
+                <h4>Les cartes ne se chargent pas</h4>
+                <ol>
+                    <li>Vérifiez votre connexion internet</li>
+                    <li>Téléchargez les cartes hors ligne</li>
+                    <li>Videz le cache dans <strong>Paramètres > Données > Cartes hors-ligne</strong></li>
+                </ol>
+
+                <h4>Je ne reçois pas les notifications</h4>
+                <ol>
+                    <li>Vérifiez les permissions de notification dans les paramètres du téléphone</li>
+                    <li>Activez les rappels dans <strong>Paramètres > Notifications</strong></li>
+                </ol>
+            </div>
+
+            <h2>Nous contacter</h2>
+
+            <div class="contact-box">
+                <h3>Email</h3>
+                <p>Pour toute question ou problème :</p>
+                <a href="mailto:skyroadlabs@gmail.com" class="email-btn">skyroadlabs@gmail.com</a>
+                <p style="margin-top: 15px; margin-bottom: 0;"><strong>Délai de réponse :</strong> Nous répondons généralement sous 24-48 heures.</p>
+            </div>
+
+            <div class="highlight">
+                <h3 style="margin-top: 0;">Informations à inclure</h3>
+                <p>Pour nous aider à résoudre votre problème rapidement, merci d'indiquer :</p>
+                <ul style="margin-bottom: 0;">
+                    <li>Votre modèle de téléphone</li>
+                    <li>Version d'Android/iOS</li>
+                    <li>Description détaillée du problème</li>
+                    <li>Captures d'écran si possible</li>
+                </ul>
+            </div>
+
+            <h2>Signaler un bug</h2>
+            <p>Vous avez trouvé un bug ? Aidez-nous à améliorer MotorQuest !</p>
+            <p>Envoyez un email à <a href="mailto:skyroadlabs@gmail.com">skyroadlabs@gmail.com</a> avec :</p>
+            <ul>
+                <li><strong>[BUG]</strong> dans le sujet</li>
+                <li>Description du problème</li>
+                <li>Étapes pour reproduire le bug</li>
+                <li>Capture d'écran ou vidéo</li>
+            </ul>
+
+            <h2>Suggestions</h2>
+            <p>Vous avez une idée pour améliorer MotorQuest ?</p>
+            <p>Envoyez-nous vos suggestions à <a href="mailto:skyroadlabs@gmail.com">skyroadlabs@gmail.com</a> avec :</p>
+            <ul>
+                <li><strong>[SUGGESTION]</strong> dans le sujet</li>
+                <li>Description de votre idée</li>
+            </ul>
+            <p>Nous lisons toutes les suggestions !</p>
+        </div>
+
+        <div class="footer">
+            <p>Merci d'utiliser MotorQuest !</p>
+            <p>&copy; 2025 MotorQuest - SkyRoad Labs. Tous droits réservés.</p>
+        </div>
+    </div>
+</body>
+</html>
